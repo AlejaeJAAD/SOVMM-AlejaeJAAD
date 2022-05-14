@@ -1,0 +1,341 @@
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/appsettings.Development.json
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/appsettings.json
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.exe
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.deps.json
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.runtimeconfig.json
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.runtimeconfig.dev.json
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.dll
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.pdb
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.csprojAssemblyReference.cache
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.AssemblyInfoInputs.cache
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.AssemblyInfo.cs
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.csproj.CoreCompileInputs.cache
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.RazorTargetAssemblyInfo.cache
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/staticwebassets/sovmm-backend.StaticWebAssets.Manifest.cache
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/staticwebassets/sovmm-backend.StaticWebAssets.xml
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.dll
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.pdb
+C:/Users/J Anaya/Desktop/SOVMM/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.genruntimeconfig.cache
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/appsettings.Development.json
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/appsettings.json
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.exe
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.deps.json
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.runtimeconfig.json
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.runtimeconfig.dev.json
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.pdb
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/DnsClient.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/MongoDB.Bson.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/MongoDB.Driver.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/MongoDB.Driver.Core.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/MongoDB.Libmongocrypt.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/SharpCompress.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/runtimes/win/native/libzstd.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/runtimes/win/native/snappy32.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/runtimes/win/native/snappy64.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.csprojAssemblyReference.cache
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.AssemblyInfoInputs.cache
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.AssemblyInfo.cs
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.csproj.CoreCompileInputs.cache
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.RazorTargetAssemblyInfo.cache
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.csproj.CopyComplete
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/staticwebassets/sovmm-backend.StaticWebAssets.Manifest.cache
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/staticwebassets/sovmm-backend.StaticWebAssets.xml
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.pdb
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.genruntimeconfig.cache
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/AWSSDK.Core.dll
+C:/Users/J Anaya/Desktop/SOVMM RESIDENCIAS/SOVMM-Project/BackEnd/sovmm-backend/bin/Debug/netcoreapp3.1/AWSSDK.S3.dll
+/home/sovmmp/BACKend01/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.csprojAssemblyReference.cache
+/home/sovmmp/BACKend01/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.AssemblyInfoInputs.cache
+/home/sovmmp/BACKend01/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.AssemblyInfo.cs
+/home/sovmmp/BACKend01/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.csproj.CoreCompileInputs.cache
+/home/sovmmp/BACKend01/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.MvcApplicationPartsAssemblyInfo.cache
+/home/sovmmp/BACKend01/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.dll
+/home/sovmmp/BACKend01/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.pdb
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/appsettings.json
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.deps.json
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.runtimeconfig.json
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.runtimeconfig.dev.json
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/sovmm-backend.pdb
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/AWSSDK.Core.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/AWSSDK.S3.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/DnsClient.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/MongoDB.Bson.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/MongoDB.Driver.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/MongoDB.Driver.Core.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/MongoDB.Libmongocrypt.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/SharpCompress.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/runtimes/win/native/libzstd.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/runtimes/win/native/snappy32.dll
+/home/sovmmp/BACKend01/sovmm-backend/bin/Debug/netcoreapp3.1/runtimes/win/native/snappy64.dll
+/home/sovmmp/BACKend01/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.RazorTargetAssemblyInfo.cache
+/home/sovmmp/BACKend01/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.csproj.CopyComplete
+/home/sovmmp/BACKend01/sovmm-backend/obj/Debug/netcoreapp3.1/staticwebassets/sovmm-backend.StaticWebAssets.Manifest.cache
+/home/sovmmp/BACKend01/sovmm-backend/obj/Debug/netcoreapp3.1/staticwebassets/sovmm-backend.StaticWebAssets.xml
+/home/sovmmp/BACKend01/sovmm-backend/obj/Debug/netcoreapp3.1/sovmm-backend.genruntimeconfig.cache
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.exe
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.deps.json
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.runtimeconfig.json
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.runtimeconfig.dev.json
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.pdb
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\AWSSDK.S3.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\SharpCompress.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.csprojAssemblyReference.cache
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.AssemblyInfoInputs.cache
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.AssemblyInfo.cs
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.CoreCompileInputs.cache
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.RazorTargetAssemblyInfo.cache
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.CopyComplete
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\staticwebassets\sovmm-backend.StaticWebAssets.Manifest.cache
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\staticwebassets\sovmm-backend.StaticWebAssets.xml
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.dll
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.pdb
+C:\Users\aleja\Downloads\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.genruntimeconfig.cache
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.exe
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.deps.json
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.runtimeconfig.json
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.runtimeconfig.dev.json
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.pdb
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\AWSSDK.S3.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\SharpCompress.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.AssemblyInfoInputs.cache
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.AssemblyInfo.cs
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.CoreCompileInputs.cache
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.RazorTargetAssemblyInfo.cache
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.CopyComplete
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\staticwebassets\sovmm-backend.StaticWebAssets.Manifest.cache
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\staticwebassets\sovmm-backend.StaticWebAssets.xml
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.dll
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.pdb
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.genruntimeconfig.cache
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.AssemblyReference.cache
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleja\Documents\Web\proyectos-web\SOVMM (VUE JS - ASPNET CORE 3)\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\scopedcss\bundle\sovmm-backend.styles.css
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.exe
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.deps.json
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.runtimeconfig.json
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.runtimeconfig.dev.json
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\sovmm-backend.pdb
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\AWSSDK.S3.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\SharpCompress.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.AssemblyReference.cache
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.AssemblyInfoInputs.cache
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.AssemblyInfo.cs
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.CoreCompileInputs.cache
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\staticwebassets\sovmm-backend.StaticWebAssets.Manifest.cache
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\staticwebassets\sovmm-backend.StaticWebAssets.xml
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\scopedcss\bundle\sovmm-backend.styles.css
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.RazorTargetAssemblyInfo.cache
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.CopyComplete
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.dll
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.pdb
+C:\Users\aleja\Documents\Web\proyectos-web\Web API\ASP.Net Core Web API - Vue JS\BACKEND\sovmm-backend\obj\Debug\netcoreapp3.1\sovmm-backend.genruntimeconfig.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\sovmm-backend.exe
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\sovmm-backend.deps.json
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\sovmm-backend.runtimeconfig.json
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\sovmm-backend.runtimeconfig.dev.json
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\sovmm-backend.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\sovmm-backend.pdb
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\AWSSDK.S3.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\SharpCompress.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.AssemblyReference.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\sovmm-backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\sovmm-backend.AssemblyInfoInputs.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\sovmm-backend.AssemblyInfo.cs
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.CoreCompileInputs.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\sovmm-backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\staticwebassets\sovmm-backend.StaticWebAssets.Manifest.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\staticwebassets\sovmm-backend.StaticWebAssets.xml
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\scopedcss\bundle\sovmm-backend.styles.css
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\sovmm-backend.RazorTargetAssemblyInfo.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.CopyComplete
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\sovmm-backend.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\sovmm-backend.pdb
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND\obj\Debug\netcoreapp3.1\sovmm-backend.genruntimeconfig.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\sovmm-backend.exe
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\sovmm-backend.deps.json
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\sovmm-backend.runtimeconfig.json
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\sovmm-backend.runtimeconfig.dev.json
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\sovmm-backend.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\sovmm-backend.pdb
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\AWSSDK.S3.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\SharpCompress.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.AssemblyReference.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.AssemblyInfoInputs.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.AssemblyInfo.cs
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.CoreCompileInputs.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\staticwebassets\sovmm-backend.StaticWebAssets.Manifest.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.RazorTargetAssemblyInfo.cache
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.CopyComplete
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.dll
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.pdb
+C:\Users\aleja\Documents\GITHUB\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.genruntimeconfig.cache
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\sovmm-backend.exe
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\sovmm-backend.deps.json
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\sovmm-backend.runtimeconfig.json
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\sovmm-backend.runtimeconfig.dev.json
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\sovmm-backend.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\sovmm-backend.pdb
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\AWSSDK.S3.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\SharpCompress.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.AssemblyReference.cache
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.AssemblyInfoInputs.cache
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.AssemblyInfo.cs
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.CoreCompileInputs.cache
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\staticwebassets\sovmm-backend.StaticWebAssets.Manifest.cache
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.RazorTargetAssemblyInfo.cache
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.csproj.CopyComplete
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.dll
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.pdb
+C:\Users\aleja\OneDrive\Escritorio\Github\Proyecto_Residencias_SOVMM-Back_y_Front\SOVMM-BACKEND-VUEJS\obj\Debug\netcoreapp3.1\sovmm-backend.genruntimeconfig.cache
