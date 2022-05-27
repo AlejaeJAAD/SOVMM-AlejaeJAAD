@@ -5,7 +5,7 @@
     <v-main style="z-index: 1">
       <v-container>
         <v-row justify="center">
-          <v-col cols="12" style="padding: 10rem">
+          <v-col cols="12" style="padding: 9rem">
             <v-card class="center" width="340px" color="transparent">
               <v-card
                 color="transparent"

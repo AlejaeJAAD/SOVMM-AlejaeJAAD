@@ -4,25 +4,45 @@ const state = {
   proyectosResidencias: [],
   proyectos: [],
   miProyectoResidencias: [],
-  miProyectos: [],
-  longMiProyectoResidencias: []
+  longMiProyectoResidencias: [],
+  longProyectosResidencias: [],
+  selectedPresidencia: [],
+  selectedProyecto: [],
+  selectedUsuario: [],
+  filter: [],
+  error: "",
+  counterFilter: "",
+  userInfo: []
 };
 
 const getters = {
   getPresidencias(state) {
-    return state.presidencias;
-  },
-  getProyectos(state) {
-    return state.proyectos;
+    return state.proyectosResidencias;
   },
   getMiProyectoResidencias(state) {
     return state.miProyectoResidencias;
   },
-  getMiProyectos(state) {
-    return state.miProyectos;
+  getSelectedPresidencia(state) {
+    return state.selectedPresidencia;
   },
-  getMiProyectoID(state) {
-    return state.getMiProyectoResidencias.proyectoId;
+  getSelectedProyecto(state) {
+    return state.selectedProyecto;
+  },
+  getSelectedUsuario(state) {
+    console.log(state.selectedUsuario);
+    return state.selectedUsuario;
+  },
+  getProyectos(state) {
+    return state.proyectos;
+  },
+  getFilter(state) {
+    return state.filter;
+  },
+  getCounterFilter(state) {
+    return state.counterFilter;
+  },
+  getUserInfo(state) {
+    return state.userInfo;
   }
 };
 
@@ -33,11 +53,29 @@ const mutations = {
   setMiProyectoResidencias(state, miPresidencia) {
     state.miProyectoResidencias = miPresidencia;
   },
+  setSelectedPresidencia(state, selectedPresidencia) {
+    state.selectedPresidencia = selectedPresidencia;
+  },
+  setSelectedProyecto(state, selectedProyecto) {
+    state.selectedProyecto = selectedProyecto;
+  },
+  setSelectedUsuario(state, selectedUsuario) {
+    state.selectedUsuario = selectedUsuario;
+  },
   setProyectos(state, proyectos) {
     state.proyectos = proyectos;
   },
-  setMiProyectos(state, proyectos) {
-    state.miProyectos = proyectos;
+  setFilter(state, filters) {
+    state.filter = filters;
+  },
+  setCounterFilter(state, counter) {
+    state.counterFilter = counter;
+  },
+  POST_ERROR: (state, payload) => {
+    state.error = payload;
+  },
+  setUserInfo(state, userInfo) {
+    state.userInfo = userInfo;
   }
 };
 
@@ -51,6 +89,61 @@ const actions = {
       }).then(res => {
         resolve(true);
         context.commit("setPresidencias", res.data);
+
+        res.data.forEach(pr => {
+          console.log(pr.createdBy);
+          Axios.get(`users/${pr.createdBy}`, {
+            headers: {
+              Authorization: `Bearer ${context.getters.getToken}`
+            }
+          }).then(resp => {
+            resolve(true);
+            context.commit("setUserInfo", resp.data);
+          });
+          state.longProyectosResidencias.push(pr);
+        });
+      });
+    });
+  },
+  fetchPresidenciasFilter(context, filterSelected) {
+    return new Promise(resolve => {
+      Axios.get("presidencias", {
+        headers: {
+          Authorization: `Bearer ${context.getters.getToken}`
+        }
+      }).then(res => {
+        resolve(true);
+        // let contador = 0;
+        // for (var i in res.data) {
+        //   if (res.data[i].status == filter) {
+        //     contador++;
+        //     console.log(contador);
+        //   }
+        //   console.log(contador);
+        // }
+
+        // context.commit("setCounterFilter", contador);
+
+        // res.data.forEach(filteredData => {
+        //   let contador = 0;
+        //   let arrayPresidencias = [];
+        //   if (filteredData.status == filter) {
+        //     contador = contador + 1;
+        //     // console.log(`Hay ${contador} proyectos con estatus ${filter}`);
+        //     arrayPresidencias.push(filteredData);
+        //     context.commit("setPresidencias", arrayPresidencias);
+        //   }
+        // });
+        var filteredNumbers = res.data.filter(function(e) {
+          return e.status == filterSelected;
+        });
+
+        if (filteredNumbers.length == 0) {
+          console.log("Hola");
+        }
+
+        console.log(filteredNumbers);
+        context.commit("setPresidencias", filteredNumbers);
       });
     });
   },
@@ -62,7 +155,31 @@ const actions = {
     }).then(res => {
       context.commit("setMiProyectoResidencias", res.data);
       state.longMiProyectoResidencias.push(res.data);
-      console.log(state.longMiProyectoResidencias.length, "HJola");
+    });
+  },
+  fetchSelectedPresidencia(context, id) {
+    Axios.get(`presidencias/${id}`, {
+      headers: {
+        Authorization: `Bearer ${context.getters.getToken}`
+      }
+    }).then(res => {
+      context.commit("setSelectedPresidencia", res.data);
+      console.log(res.data.createdBy);
+      Axios.get(`users/${res.data.createdBy}`, {
+        headers: {
+          Authorization: `Bearer ${context.getters.getToken}`
+        }
+      }).then(resu => {
+        context.commit("setSelectedUsuario", resu.data);
+        console.log(resu.data);
+      });
+      Axios.get(`proyectos/${res.data.proyectoId}`, {
+        headers: {
+          Authorization: `Bearer ${context.getters.getToken}`
+        }
+      }).then(resp => {
+        context.commit("setSelectedProyecto", resp.data);
+      });
     });
   },
   fetchProyectos(context) {
@@ -74,14 +191,9 @@ const actions = {
       context.commit("setProyectos", res.data);
     });
   },
-  fetchMiProyectos(context) {
-    Axios.get(`proyectos/presidencias/${context.getters.getMyProyectoID}`, {
-      headers: {
-        Authorization: `Bearer ${context.getters.getToken}`
-      }
-    }).then(res => {
-      context.commit("setMiProyectos", res.data);
-    });
+  SET_ERROR: (context, errorMsg) => {
+    console.log(errorMsg);
+    context.commit("POST_ERROR", errorMsg);
   }
 };
 

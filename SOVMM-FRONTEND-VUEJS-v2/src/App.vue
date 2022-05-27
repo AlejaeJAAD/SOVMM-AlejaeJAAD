@@ -6,7 +6,7 @@
       <router-view name="nav" />
       <div style="margin-top: 3rem">
         <transition name="fade" mode="out-in">
-          <router-view />
+          <router-view :key="$route.fullPath"></router-view>
         </transition>
       </div>
       <v-snackbar color="red" centered style="margin-top: -15%" transition="fade-in" :timeout="3000" @mouseenter="snackbar = false" shaped v-model="snackbar">{{ snckTxt }}</v-snackbar>

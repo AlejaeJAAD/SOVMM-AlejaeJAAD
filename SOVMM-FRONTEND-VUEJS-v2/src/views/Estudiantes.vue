@@ -203,7 +203,7 @@
 
 <script>
 import EstudiantesTable from "../components/Estudiantes/EstudiantesTable";
-
+import LogotipoTec from "@/assets/LogotipoTec.png";
 export default {
   name: "Estudiantes",
   data() {
@@ -253,7 +253,8 @@ export default {
         departamento: [val => (val || "").length > 0 || "Este campo es requerido"]
       },
       carreras: ["Ingenieria Mecanica", "Ingenieria Mecatronica"],
-      departamentos: ["Departamento de Metal-Mecanica"]
+      departamentos: ["Departamento de Metal-Mecanica"],
+      img: LogotipoTec
     };
   },
   components: {
@@ -305,7 +306,7 @@ export default {
         }, 7000);
       } else {
         const estudiante = {
-          image: "",
+          image: "https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/LogotipoTec.png",
           email: this.correoinstitucional,
           password: this.contraseña,
           firstName: this.nombres,

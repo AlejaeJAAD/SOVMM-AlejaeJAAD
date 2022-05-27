@@ -1,11 +1,13 @@
 <!-- @format -->
 
 <template>
-  <v-app>
+  <v-app style="margin-top: -100vh'">
     <v-main style="background-color: #f7f7f7">
       <v-container>
-        <IPortada />
         <v-row justify="center">
+          <v-col cols="12">
+            <IPortada />
+          </v-col>
           <v-col cols="12">
             <v-expansion-panels inset>
               <v-expansion-panel style="background-color: #50858b">

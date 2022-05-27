@@ -121,7 +121,7 @@ import ImageHandler from "@/components/Global/ImageHandler";
 export default {
   components: { ImageHandler },
   props: ["currentStudent"],
-  name: "EstudianteDetail",
+  name: "EstudianteEdit",
   data() {
     return {
       image: [],

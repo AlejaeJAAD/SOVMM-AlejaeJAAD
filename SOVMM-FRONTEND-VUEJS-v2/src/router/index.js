@@ -14,6 +14,11 @@ const routes = [
     meta: { requiresAuth: false }
   },
   {
+    path: "/error",
+    name: "error",
+    component: Error
+  },
+  {
     path: "/login",
     name: "Login",
     component: () => import("@/views/Login.vue"),
@@ -48,7 +53,7 @@ const routes = [
   },
   {
     path: "/proyectos-alumnos",
-    name: "Proyectos-alumnos",
+    name: "ProyectosAlumnos",
     components: {
       default: () => import("@/views/ProyectosAlumnos.vue"),
       nav: () => import("@/components/Global/Nav.vue")
@@ -56,9 +61,21 @@ const routes = [
     meta: { requiresAuth: true }
   },
   {
+    path: "/proyectos-alumnos/:id",
+    name: "proyectoSeleccionado",
+    components: {
+      default: () => import("@/components/ProyectosAlumnos/PAInfo.vue"),
+      nav: () => import("@/components/Global/Nav.vue")
+    },
+    props: true
+  },
+  {
     path: "/estudiantes",
     name: "Estudiantes",
-    component: () => import("@/views/Estudiantes"),
+    components: {
+      default: () => import("@/views/Estudiantes.vue"),
+      nav: () => import("@/components/Global/Nav.vue")
+    },
     meta: { requiresAuth: true }
   }
 ];

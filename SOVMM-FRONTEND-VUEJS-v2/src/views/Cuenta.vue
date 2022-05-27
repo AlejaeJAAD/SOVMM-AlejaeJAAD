@@ -43,7 +43,6 @@ export default {
   computed: {
     myUser() {
       const myUser = this.$store.getters.getUser;
-      console.log(myUser, "USERSIN");
       return myUser || {};
     }
   }

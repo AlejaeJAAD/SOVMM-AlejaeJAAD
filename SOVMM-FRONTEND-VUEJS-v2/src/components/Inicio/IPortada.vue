@@ -4,7 +4,7 @@
   <div>
     <v-row>
       <v-col cols="12">
-        <v-card height="70vh" class="align-content-center hero"> </v-card>
+        <v-card height="68vh" class="align-content-center hero"> </v-card>
         <v-card>
           <v-card-title> Residencias profesionales </v-card-title>
           <v-card-subtitle>

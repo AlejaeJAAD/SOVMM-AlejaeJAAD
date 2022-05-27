@@ -169,7 +169,6 @@ export default {
             cartAceptacion: ["https://sovmm-01.s3.us-east-2.amazonaws.com/FORMATO-CARTA+DE+ACEPTACION.pdf"],
             status: false
           };
-          console.log(newProyecto, "uyuyuy");
           Axios.post("proyectos/new", newProyecto, { headers: this.auth }).then(proyecto => {
             const newPresidencias = {
               createdBy: this.$store.getters.getUser.id,

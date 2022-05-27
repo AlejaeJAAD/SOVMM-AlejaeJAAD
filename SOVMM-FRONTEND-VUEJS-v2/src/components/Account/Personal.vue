@@ -167,7 +167,6 @@ export default {
       this.enrollment = this.myUser.enrollment;
       this.gender = this.myUser.gender;
       this.dir = this.myUser.address;
-      console.log("Hola", this.myUser);
     },
     cancelar() {
       this.castUser();
@@ -224,7 +223,6 @@ export default {
       }
     },
     verificarCP() {
-      console.log("Hola");
       return Axios.post("https://api.copomex.com/query/info_cp/" + this.cp + "?token=47b8b142-c0dc-4767-b207-662d6e6064fa").then(res => {
         console.log(res.data);
         this.suburbs = [];
@@ -249,7 +247,6 @@ export default {
     },
     image() {
       if (this.image.length <= 1) {
-        console.log(this.image);
         try {
           const image = this.image[0];
           const lector = new FileReader();

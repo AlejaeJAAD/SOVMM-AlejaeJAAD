@@ -116,14 +116,12 @@ const actions = {
   },
   updateUser(context, newUserData) {
     return new Promise((resolve, error) => {
-      console.log(newUserData, "DATA");
       Axios.put(`users/${newUserData.id}`, newUserData, {
         headers: {
           Authorization: `Bearer ${context.getters.getToken}`
         }
       })
         .then(() => {
-          console.log(context.getters.getToken, "TOEKN");
           context.dispatch("fetchSession");
           resolve(true);
         })
@@ -150,7 +148,6 @@ const actions = {
       }
     }).then(res => {
       context.commit("setMyUsuario", res.data);
-      // console.log(res.data, 'hello');
     });
   },
   fetchUsuarios(context) {

@@ -1,16 +1,11 @@
 <template>
   <div>
-    <v-card v-for="(file, index) in imgArray"
-:key="index" elevation="16" rounded style="display: inline-block;margin: 5px">
+    <v-card v-for="(file, index) in imgArray" :key="index" elevation="16" rounded style="display: inline-block;margin: 5px">
       <v-avatar tile size="124">
         <v-img :src="file"></v-img>
       </v-avatar>
     </v-card>
-    <v-file-input :disabled="disabled"
-prepend-inner-icon="mdi-camera" prepend-icon=""
-:loading="uploading" solo-inverted :multiple="!single"
-v-model="files" accept="image/png, image/jpeg, image/bmp"
-chips persistent-hint :error-messages="errors" :style="iStyles" />
+    <v-file-input :disabled="disabled" prepend-inner-icon="mdi-camera" prepend-icon="" :loading="uploading" solo-inverted :multiple="!single" v-model="files" accept="image/png, image/jpeg, image/bmp" chips persistent-hint :error-messages="errors" :style="iStyles" />
   </div>
 </template>
 
@@ -20,7 +15,7 @@ export default {
     single: Boolean,
     iStyles: Array,
     disabled: Boolean,
-    uploading: Boolean,
+    uploading: Boolean
   },
   name: "ImageHandler",
   data() {
@@ -28,12 +23,11 @@ export default {
       files: null,
       errors: [],
       imgArray: [],
-      icon_outer: "mdi-cloud-upload",
+      icon_outer: "mdi-cloud-upload"
     };
   },
   watch: {
     files() {
-      console.log(this.files.length);
       const finalArray = [];
       if (this.files.length > 1) {
         this.files = this.files.slice(0, 1);
@@ -50,7 +44,7 @@ export default {
             const lector = new FileReader();
             lector.readAsDataURL(imagen);
             let result;
-            lector.onload = (event) => {
+            lector.onload = event => {
               result = event.target.result;
               finalArray.push(result);
             };
@@ -64,14 +58,14 @@ export default {
         this.errors = [];
       }, 5000);
       this.filesChanged();
-    },
+    }
   },
   methods: {
     filesChanged() {
       this.$emit("input", this.files);
-    },
+    }
   },
-  created() {},
+  created() {}
 };
 </script>
 
