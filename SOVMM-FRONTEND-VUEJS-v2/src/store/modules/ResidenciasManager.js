@@ -2,6 +2,7 @@ import Axios from "axios";
 
 const state = {
   proyectosResidencias: [],
+  proyectosResidenciasInmutable: [],
   proyectos: [],
   miProyectoResidencias: [],
   longMiProyectoResidencias: [],
@@ -18,6 +19,9 @@ const state = {
 const getters = {
   getPresidencias(state) {
     return state.proyectosResidencias;
+  },
+  getPresidenciasInmutable(state) {
+    return state.proyectosResidenciasInmutable;
   },
   getMiProyectoResidencias(state) {
     return state.miProyectoResidencias;
@@ -49,6 +53,9 @@ const getters = {
 const mutations = {
   setPresidencias(state, presidencias) {
     state.proyectosResidencias = presidencias;
+  },
+  setPresidenciasInmutable(state, presidencias) {
+    state.proyectosResidenciasInmutable = presidencias;
   },
   setMiProyectoResidencias(state, miPresidencia) {
     state.miProyectoResidencias = miPresidencia;
@@ -89,6 +96,7 @@ const actions = {
       }).then(res => {
         resolve(true);
         context.commit("setPresidencias", res.data);
+        context.commit("setPresidenciasInmutable", res.data);
 
         res.data.forEach(pr => {
           console.log(pr.createdBy);
@@ -144,6 +152,52 @@ const actions = {
 
         console.log(filteredNumbers);
         context.commit("setPresidencias", filteredNumbers);
+      });
+    });
+  },
+  fetchPresidenciasCategoria(context, categoriaSelected) {
+    return new Promise(resolve => {
+      Axios.get("presidencias", {
+        headers: {
+          Authorization: `Bearer ${context.getters.getToken}`
+        }
+      }).then(res => {
+        resolve(true);
+        // let contador = 0;
+        // for (var i in res.data) {
+        //   if (res.data[i].status == filter) {
+        //     contador++;
+        //     console.log(contador);
+        //   }
+        //   console.log(contador);
+        // }
+
+        // context.commit("setCounterFilter", contador);
+
+        // res.data.forEach(filteredData => {
+        //   let contador = 0;
+        //   let arrayPresidencias = [];
+        //   if (filteredData.status == filter) {
+        //     contador = contador + 1;
+        //     // console.log(`Hay ${contador} proyectos con estatus ${filter}`);
+        //     arrayPresidencias.push(filteredData);
+        //     context.commit("setPresidencias", arrayPresidencias);
+        //   }
+        // });
+        var filteredCategorias = res.data.filter(function(e) {
+          console.log(e.categoria, categoriaSelected);
+          const upperCat = categoriaSelected.charAt(0).toUpperCase() + categoriaSelected.slice(1);
+
+          console.log(upperCat);
+          return e.categoria == upperCat;
+        });
+
+        if (filteredCategorias.length == 0) {
+          console.log("Hola");
+        }
+
+        console.log(filteredCategorias);
+        context.commit("setPresidencias", filteredCategorias);
       });
     });
   },

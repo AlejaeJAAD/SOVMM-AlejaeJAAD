@@ -4,30 +4,30 @@
       <v-col>
         <div>
           <v-col cols="12">
-            <download-excel :data="getEstudiantes" :fields="info_fields">
+            <download-excel :data="getMaestros" :fields="info_fields">
               <v-btn color="green" block small class="white--text" @click="imprimir()"> Descargar Excel<v-icon>mdi-microsoft-excel</v-icon> </v-btn>
             </download-excel>
           </v-col>
           <v-col cols="12" sm="4" md="2" lg="4" style="margin-bottom: -2rem">
-            <v-btn color="blue darken-1" small class="white--text " @click="creacionEstudiante = true">
-              Nuevo Estudiante
-              <CrearEstudiante :creacionEstudiante="creacionEstudiante" @update="crearEstudianteMethod" />
+            <v-btn color="blue darken-1" small class="white--text " @click="creacionMaestro = true">
+              Nuevo Maestro
+              <CrearMaestro :creacionMaestro="creacionMaestro" @update="crearMaestroMethod" />
             </v-btn>
           </v-col>
         </div>
       </v-col>
       <v-col cols="12">
-        <EstudiantesTable />
+        <MaestrosTable />
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-import CrearEstudiante from "../components/Estudiantes/CrearEstudiante";
-import EstudiantesTable from "../components/Estudiantes/EstudiantesTable";
+import CrearMaestro from "../components/Maestros/CrearMaestro";
+import MaestrosTable from "../components/Maestros/MaestrosTable";
 export default {
-  name: "Estudiantes",
+  name: "Maestros",
   data() {
     return {
       info_fields: {
@@ -44,29 +44,29 @@ export default {
         Telefono: "phone",
         Direccion: "address"
       },
-      creacionEstudiante: false
+      creacionMaestro: false
     };
   },
   components: {
-    CrearEstudiante,
-    EstudiantesTable
+    CrearMaestro,
+    MaestrosTable
   },
 
   methods: {
     imprimir() {
       console.log(this.info_fields.email);
     },
-    crearEstudianteMethod(value) {
+    crearMaestroMethod(value) {
       console.log(value);
-      this.creacionEstudiante = value;
+      this.creacionMaestro = value;
     }
   },
   created() {
-    this.$store.dispatch("fetchEstudiantes");
+    this.$store.dispatch("fetchMaestros");
   },
   computed: {
-    getEstudiantes() {
-      return this.$store.getters.getEstudiantes;
+    getMaestros() {
+      return this.$store.getters.getMaestros;
     }
   }
 };

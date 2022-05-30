@@ -77,6 +77,15 @@ const routes = [
       nav: () => import("@/components/Global/Nav.vue")
     },
     meta: { requiresAuth: true }
+  },
+  {
+    path: "/maestros",
+    name: "Maestros",
+    components: {
+      default: () => import("@/views/Maestros.vue"),
+      nav: () => import("@/components/Global/Nav.vue")
+    },
+    meta: { requiresAuth: true }
   }
 ];
 

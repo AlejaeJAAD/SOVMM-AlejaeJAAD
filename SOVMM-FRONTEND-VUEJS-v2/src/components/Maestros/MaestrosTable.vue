@@ -13,7 +13,7 @@
               <v-text-field v-model="busqueda" append-icon="mdi-magnify" label="Buscar" single-line hide-details> </v-text-field>
             </v-card-title>
             <v-divider></v-divider>
-            <v-data-table locale="es" item-key="id" :headers="headers" :items="getEstudiantes" :items-per-page="10" :page.sync="page" @page-count="pageCount = $event" class="elevation-1" :search="busqueda" hide-default-footer>
+            <v-data-table locale="es" item-key="id" :headers="headers" :items="getMaestros" :items-per-page="10" :page.sync="page" @page-count="pageCount = $event" class="elevation-1" :search="busqueda" hide-default-footer>
               <!--
                             <template slot="items" slot-scope="props">
                               <td>{{ props.item.id }}</td>
@@ -48,18 +48,18 @@
               </template>
             </v-data-table>
 
-            <v-pagination v-model="page" :length="Math.ceil(getEstudiantesLength / totalElem)" prev-icon="mdi-menu-left" next-icon="mdi-menu-right" :page="page" :total-visible="7"></v-pagination>
+            <v-pagination v-model="page" :length="Math.ceil(getMaestrosLength / totalElem)" prev-icon="mdi-menu-left" next-icon="mdi-menu-right" :page="page" :total-visible="7"></v-pagination>
           </v-card>
           <v-dialog persistent v-model="detalle" width="80%" class="dm">
             <v-card flat>
               <v-btn block @click.prevent="cerrar">Cerrar</v-btn>
-              <EstudianteDetail v-bind:currentStudent="currentStudent" />
+              <MaestroDetail v-bind:currentStudent="currentStudent" />
             </v-card>
           </v-dialog>
           <v-dialog persistent v-model="modificar" width="80%" class="dm">
             <v-card flat>
               <v-btn block @click.prevent="cerrar">Cerrar</v-btn>
-              <EstudianteEdit v-bind:currentStudent="currentStudent" />
+              <MaestroEdit v-bind:currentStudent="currentStudent" />
             </v-card>
           </v-dialog>
           <v-dialog persistent v-model="eliminar" width="750px">
@@ -96,14 +96,14 @@
 </template>
 
 <script>
-import EstudianteDetail from "./EstudianteDetail.vue";
-import EstudianteEdit from "./EstudianteEdit.vue";
+import MaestroDetail from "./MaestroDetail.vue";
+import MaestroEdit from "./MaestroEdit.vue";
 
 export default {
   name: "Estudiantes",
   components: {
-    EstudianteDetail,
-    EstudianteEdit
+    MaestroDetail,
+    MaestroEdit
   },
   data() {
     return {
@@ -148,11 +148,11 @@ export default {
     }
   },
   computed: {
-    getEstudiantes() {
-      return this.$store.getters.getEstudiantes.slice((this.page - 1) * this.totalElem, this.page * this.totalElem);
+    getMaestros() {
+      return this.$store.getters.getMaestros.slice((this.page - 1) * this.totalElem, this.page * this.totalElem);
     },
-    getEstudiantesLength() {
-      return this.$store.getters.getEstudiantes.length;
+    getMaestrosLength() {
+      return this.$store.getters.getMaestros.length;
     }
   },
   methods: {
@@ -160,21 +160,21 @@ export default {
       Object.assign(this.$data, this.$options.data());
     },
     detalleEstudiante(id) {
-      this.$store.dispatch("getStudent", id).then(res => {
+      this.$store.dispatch("getTeacher", id).then(res => {
         this.currentStudent = res;
         this.detalle = true;
         return this.currentStudent;
       });
     },
     eliminarEstudiante(id) {
-      this.$store.dispatch("getStudent", id).then(res => {
+      this.$store.dispatch("getTeacher", id).then(res => {
         this.currentStudent = res;
         this.eliminar = true;
         return this.currentStudent || {};
       });
     },
     editarEstudiante(id) {
-      this.$store.dispatch("getStudent", id).then(res => {
+      this.$store.dispatch("getTeacher", id).then(res => {
         this.currentStudent = res;
         this.modificar = true;
         return this.currentStudent;
@@ -192,7 +192,7 @@ export default {
       this.eliminar = false;
     },
     eliminarEstudianteC(id) {
-      this.$store.dispatch("deleteStudent", id).then(res => {
+      this.$store.dispatch("deleteTeacher", id).then(res => {
         this.eliminado = res;
         setTimeout(() => {
           this.eliminado = true;

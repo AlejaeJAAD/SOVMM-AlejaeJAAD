@@ -15,16 +15,59 @@
           </v-row>
         </v-card> -->
         <v-card class="card" hover @click="getUserInfo(presidencia.id)" v-model="presidencia.id" :color="color">
-          <v-card class="cardAC">
-            <div class="card-inner">
-              <h3 class="card-title">
-                {{ presidencia.id }}
-                <v-card>
-                  <v-img :src="getUserInfoC.image"></v-img>
-                </v-card>
-              </h3>
-            </div>
-          </v-card>
+          <v-menu v-model="menu" :close-on-content-click="false" open-on-hover transition="scroll-x-reverse-transition" min-width="auto"
+            ><template v-slot:activator="{ on, attrs }">
+              <v-card class="cardAC" v-bind="attrs" v-on="on">
+                <div class="card-inner">
+                  <h5 class="card-title">
+                    {{ presidencia.id }}<br /><br />
+                    Categoria: <span style="opacity: 0.8">{{ presidencia.categoria }}</span>
+
+                    <v-divider></v-divider>
+                  </h5>
+                  <br />
+                  <h5>
+                    Nombre de proyecto: <br /><span style="opacity: 0.8">{{ presidencia.nProyecto }}</span>
+                  </h5>
+                  <h5>
+                    Creador por: <br /><span style="opacity: 0.8">{{ getUserInfoC.firstName }} {{ getUserInfoC.lastName }}</span>
+                  </h5>
+                  <h5>
+                    Correo institucional: <br /><span style="opacity: 0.8">{{ getUserInfoC.email }}</span>
+                  </h5>
+                </div>
+              </v-card>
+            </template>
+            <v-card>
+              <v-list>
+                <v-list-item>
+                  <v-list-item-avatar>
+                    <img :src="getUserInfoC.image" alt="image" />
+                  </v-list-item-avatar>
+
+                  <v-list-item-content>
+                    <v-list-item-title>{{ getUserInfoC.firstName }} {{ getUserInfoC.lastName }}</v-list-item-title>
+                    <v-list-item-subtitle>Founder of Vuetify</v-list-item-subtitle>
+                  </v-list-item-content>
+
+                  <v-list-item-action>
+                    <v-btn :class="fav ? 'red--text' : ''" icon @click="fav = !fav">
+                      <v-icon>mdi-heart</v-icon>
+                    </v-btn>
+                  </v-list-item-action>
+                </v-list-item>
+              </v-list>
+
+              <v-divider></v-divider>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+
+                <v-btn text @click="menu = false">
+                  Cerrar
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-menu>
         </v-card>
       </v-col>
     </v-row>
@@ -38,7 +81,9 @@ export default {
     return {
       userId: "",
       color: "white",
-      proyecto: ""
+      proyecto: "",
+      menu: false,
+      fav: true
     };
   },
   mounted() {
@@ -84,21 +129,17 @@ export default {
 .card {
   color: white;
   font-size: 16px;
-  position: relative;
   width: 400px;
   margin: auto;
   font-family: Arial;
   padding: 1px 0 0 0;
 }
-
+.cardAC {
+  margin: 5px 0 0 5px;
+}
 .card-inner {
-  background: linear-gradient(45deg, #ffffff4b, #00000000);
-  position: relative;
   padding: 2rem;
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-}
-.cardAC {
-  margin: 5px 0 0 5px;
 }
 </style>
