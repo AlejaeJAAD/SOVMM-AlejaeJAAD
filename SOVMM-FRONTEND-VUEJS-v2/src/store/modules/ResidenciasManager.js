@@ -33,7 +33,6 @@ const getters = {
     return state.selectedProyecto;
   },
   getSelectedUsuario(state) {
-    console.log(state.selectedUsuario);
     return state.selectedUsuario;
   },
   getProyectos(state) {
