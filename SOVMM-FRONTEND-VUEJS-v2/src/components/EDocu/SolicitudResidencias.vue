@@ -29,29 +29,33 @@
         CARGAR FORMATO DE SOLICITUD DE RESIDENCIAS PROFESIONALES CORRESPONDIENTE PARA SU ACTUALIZACION
       </v-card>
       <v-row>
-        <v-col cols="12">
-          <v-card flat v-for="document in selectedProyecto.solicitudRes" :key="document">
-            <pdf
-              :src="document"
-              :page="currentPage"
-              @num-pages="pageCount = $event"
-              @page-loaded="currentPage = $event"
-              style="display: inline-block; width: 100%;
-                 position:relative;"
-            >
-            </pdf>
+        <v-col cols="12" class="d-flex align-center justify-center">
+          <v-card
+            flat
+            v-for="document in selectedProyecto.solicitudRes"
+            :key="document"
+            style="width: 100%;
+                "
+          >
+            <pdf :src="document" :page="currentPage" @num-pages="pageCount = $event" @page-loaded="currentPage = $event"> </pdf>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="d-flex align-center justify-center">
+          <v-card flat>
             <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn class="primary" @click="prevPage">
-                Pagina anterior
-              </v-btn>
-              <v-spacer></v-spacer>
-              <v-btn class="ma-10">{{ currentPage }} / {{ pageCount }}</v-btn>
-              <v-spacer></v-spacer>
-              <v-btn class="primary" @click="nextPage">
-                Pagina siguiente
-              </v-btn>
-              <v-spacer></v-spacer>
+              <v-container>
+                <v-row dense>
+                  <v-col
+                    ><v-btn outlined @click="prevPage"><v-icon>mdi-arrow-left-drop-circle-outline</v-icon></v-btn></v-col
+                  >
+                  <v-col
+                    ><v-btn outlined>{{ currentPage }} / {{ pageCount }}</v-btn></v-col
+                  >
+                  <v-col
+                    ><v-btn outlined @click="nextPage"><v-icon>mdi-arrow-right-drop-circle-outline</v-icon></v-btn></v-col
+                  >
+                </v-row>
+              </v-container>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -128,8 +132,6 @@ export default {
       this.currentPage++;
     },
     postDocument() {
-      console.log(this.solicitudRes, "ih");
-      console.log(this.selectedProyecto.solicitudRes, "49494");
       /*
       const data = {
         document: '',
@@ -158,7 +160,6 @@ export default {
       }
       */
       if (this.solicitudRes.length !== 0) {
-        console.log(this.info, "metodo");
         const presidenciasActualizado = {
           id: this.selectedPresidencia.id,
           createdBy: this.selectedPresidencia.createdBy,
@@ -200,8 +201,6 @@ export default {
           headers: this.$store.getters.getAuth
         }).then(res => {
           const proyect = this.info;
-          console.log(res.data.docs, "tutut");
-          console.log(proyect, "utyt");
           proyect.solicitudRes = res.data.docs;
           proyect.status = true;
           Axios.put(`proyectos/${proyect.id}`, proyect, {
@@ -210,8 +209,6 @@ export default {
           Axios.put(`presidencias/${presidenciasActualizado.id}`, presidenciasActualizado, {
             headers: this.$store.getters.getAuth
           }).then(() => {
-            // this.$store.dispatch("fetchMyPresidencias");
-            // this.$store.dispatch("fetchPresidencias");
             console.log(proyect, "Proyecto");
           });
         });

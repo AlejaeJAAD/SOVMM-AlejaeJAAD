@@ -98,15 +98,15 @@ const actions = {
         context.commit("setPresidenciasInmutable", res.data);
 
         res.data.forEach(pr => {
-          console.log(pr.createdBy);
-          Axios.get(`users/${pr.createdBy}`, {
-            headers: {
-              Authorization: `Bearer ${context.getters.getToken}`
-            }
-          }).then(resp => {
-            resolve(true);
-            context.commit("setUserInfo", resp.data);
-          });
+          // console.log(pr.createdBy);
+          // Axios.get(`users/${pr.createdBy}`, {
+          //   headers: {
+          //     Authorization: `Bearer ${context.getters.getToken}`
+          //   }
+          // }).then(resp => {
+          //   resolve(true);
+          //   context.commit("setUserInfo", resp.data);
+          // });
           state.longProyectosResidencias.push(pr);
         });
       });

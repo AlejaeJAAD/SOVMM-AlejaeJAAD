@@ -3,13 +3,13 @@
     <v-form>
       <v-row>
         <v-col cols="12">
-          <a @click="styleButton" style="color: inherit; text-decoration: none;" href="https://sovmm-03.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdf" target="_blank">
+          <a @click="styleButton" style="color: inherit; text-decoration: none;" href="https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdf" target="_blank">
             <v-btn large dark @click="styleButton" :outlined="!clicked" :color="!clicked ? 'grey darken-3' : 'black'" :class="!clicked ? 'white--text' : ''">
               Descarga el formato de segundo seguimiento
               <v-icon class="ml-2">mdi-download</v-icon>
             </v-btn>
           </a>
-          <form action="https://sovmm-03.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdf" method="get"></form>
+          <form action="https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdf" method="get"></form>
         </v-col>
         <v-col cols="12">
           <v-card-subtitle>
@@ -25,43 +25,53 @@
         <v-spacer></v-spacer>
       </v-card-actions>
       <v-card flat style="background-color: #333333" class="text-center white--text mt-5">
-        EL DOCUMENTO MOSTRADO DEBAJO ES POR DEFECTO <br />
-        CARGAR SEGUNDA ASESORIA DE RESIDENCIAS PROFESIONALES CORRESPONDIENTE PARA SU ACTUALIZACION
+        EL DOCUMENTO MOSTRADO DEBAJO ES EL FORMATO DE SEGUNDO SEGUIMIENTO EN BLANCO <br />
+        NECESITAS CARGAR TU SEGUNDO SEGUIMIENTO DE RESIDENCIAS PROFESIONALES CORRESPONDIENTE PARA SU ACTUALIZACION
       </v-card>
       <v-row>
-        <v-col cols="12">
-          <v-card flat align="center" v-for="document in this.info.segundaSeguimientoEv" :key="document">
-            <pdf
-              :src="document"
-              :page="currentPage"
-              @num-pages="pageCount = $event"
-              @page-loaded="currentPage = $event"
-              style="display: inline-block; width: 70%;
-                 position:relative;"
-            >
-            </pdf>
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn class="primary" @click="prevPage">
-                Pagina anterior
-              </v-btn>
-              <v-spacer></v-spacer>
-              <v-btn class="ma-10">{{ currentPage }} / {{ pageCount }}</v-btn>
-              <v-spacer></v-spacer>
-              <v-btn class="primary" @click="nextPage">
-                Pagina siguiente
-              </v-btn>
-              <v-spacer></v-spacer>
-            </v-card-actions>
-            <v-col cols="12">
-              <a @click="styleButton" style="color: inherit; text-decoration: none;" :href="document" target="_blank">
-                <v-btn large dark @click="styleButton" :outlined="!clicked" :color="!clicked ? 'grey darken-3' : 'black'" :class="!clicked ? 'white--text' : ''">
-                  Descargar documento actualizado
-                  <v-icon class="ml-2">mdi-download</v-icon>
-                </v-btn>
-              </a>
-            </v-col>
+        <v-col cols="12" class="d-flex align-center justify-center">
+          <v-card
+            flat
+            v-for="document in selectedProyecto.segundaSeguimientoEv"
+            :key="document"
+            style="width: 100%;
+                "
+          >
+            <pdf :src="document" :page="currentPage" @num-pages="pageCount = $event" @page-loaded="currentPage = $event"> </pdf>
           </v-card>
+        </v-col>
+        <v-col cols="12" class="d-flex align-center justify-center">
+          <v-card flat style="margin-bottom: -2.5rem; margin-top: -3rem">
+            <v-card-actions>
+              <v-container>
+                <v-row dense>
+                  <v-col
+                    ><v-btn outlined @click="prevPage"><v-icon>mdi-arrow-left-drop-circle-outline</v-icon></v-btn></v-col
+                  >
+                  <v-col
+                    ><v-btn outlined>{{ currentPage }} / {{ pageCount }}</v-btn></v-col
+                  >
+                  <v-col
+                    ><v-btn outlined @click="nextPage"><v-icon>mdi-arrow-right-drop-circle-outline</v-icon></v-btn></v-col
+                  >
+                </v-row>
+              </v-container>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+        <v-col cols="12">
+          <v-card flat style="background-color: #333333; padding-top: -3rem; margin-bottom: -2rem" class="text-center white--text mt-5">
+            SI AUN NO ES AGREGADO TU DOCUMENTO DE SEGUNDO SEGUIMIENTO <br />
+            EL BOTON DE ABAJO SOLO DESCARGARA EL FORMATO EN BLANCO DE SEGUNDO SEGUIMIENTO HASTA QUE SEA AGREGADO EL NUEVO DOCUMENTO
+          </v-card>
+        </v-col>
+        <v-col cols="12" v-for="document in selectedProyecto.segundaSeguimientoEv" :key="document">
+          <a @click="styleButton" style="color: inherit; text-decoration: none;" :href="document" target="_blank">
+            <v-btn style="margin-bottom: -4.5rem" dark @click="styleButton" :outlined="!clicked" :color="!clicked ? 'grey darken-3' : 'black'" :class="!clicked ? 'white--text' : ''">
+              Descargar documento actualizado
+              <v-icon class="ml-2">mdi-download</v-icon>
+            </v-btn>
+          </a>
         </v-col>
       </v-row>
     </v-form>
@@ -74,11 +84,7 @@ import pdf from "vue-pdf";
 import Axios from "axios";
 
 export default {
-  props: {
-    proyecto: Object,
-    index: Number,
-    mios: Boolean
-  },
+  props: ["selectedProyecto", "selectedPresidencia"],
   name: "SegundoSeguimiento",
   components: {
     DocumentHandler,
@@ -105,7 +111,7 @@ export default {
       proyect: {},
       document: "",
       expand: false,
-      segundaSeguimientoEv: []
+      segundoSeguimientoEv: []
     };
   },
   mounted() {
@@ -113,8 +119,6 @@ export default {
       headers: this.$store.getters.getAuth
     }).then(response => {
       this.info = response.data;
-      console.log(response, "8749");
-      console.log(this.info, "3939393");
       // eslint-disable-next-line prefer-destructuring
     });
     this.$nextTick(() => {
@@ -125,7 +129,6 @@ export default {
         }
       }, 1000);
     });
-    console.log(this.proyecto, "uyuyuyuy");
   },
   watch: {
     isActive() {
@@ -159,38 +162,7 @@ export default {
       this.currentPage++;
     },
     postDocument() {
-      console.log(this.segundaSeguimientoEv, "ih");
-      console.log(this.proy.segundaSeguimientoEv, "49494");
-      /*
-      const data = {
-        document: '',
-      };
-      if (this.documents.length > 0) {
-        const fD = new FormData();
-        for (let i = 0; i < this.documents.length; i += 1) {
-          fD.append(`document${i}`, this.documents[i]);
-        }
-        Axios.post('documents', fD, {
-          headers: {
-            'Content-Type': 'multipart/form-data',
-            'Media-Type': 'application/pdf',
-            Authorization: `Bearer ${this.$store.getters.getToken}`,
-          },
-        })
-          .then((res) => {
-            console.log('pw0w0w¿', res);
-            // eslint-disable-next-line prefer-destructuring
-            data.document = res.data.docs[0];
-
-            console.log('put', data);
-          });
-      } else {
-        console.log('puto', data);
-      }
-      */
       if (this.segundaSeguimientoEv.length !== 0) {
-        console.log("entro0");
-        console.log(this.info, "metodo");
         const presidenciasActualizado = {
           id: this.proyecto.id,
           createdBy: this.proyecto.createdBy,
@@ -232,8 +204,6 @@ export default {
           headers: this.$store.getters.getAuth
         }).then(res => {
           const proyect = this.info;
-          console.log(res.data.docs, "tutut");
-          console.log(proyect, "utyt");
           proyect.segundaSeguimientoEv = res.data.docs;
           proyect.status = true;
           Axios.put(`proyectos/${proyect.id}`, proyect, {
@@ -242,9 +212,7 @@ export default {
           Axios.put(`presidencias/${presidenciasActualizado.id}`, presidenciasActualizado, {
             headers: this.$store.getters.getAuth
           }).then(() => {
-            this.$store.dispatch("fetchMyPresidencias");
-            this.$store.dispatch("fetchPresidencias");
-            // this.$router.push('/inicio');
+            console.log(proyect);
           });
         });
       }

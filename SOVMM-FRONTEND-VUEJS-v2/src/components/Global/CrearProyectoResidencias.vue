@@ -157,16 +157,16 @@ export default {
           const newProyecto = {
             type: "RESIDENCIAS",
             repImages: res.data.imgs,
-            primerAsesoria: ["https://sovmm-01.s3.us-east-2.amazonaws.com/FORMATO-REGISTRO+DE+ASESORIA.pdf"],
-            primerSeguimientoEv: ["https://sovmm-01.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdf"],
-            segundaAsesoria: ["https://sovmm-01.s3.us-east-2.amazonaws.com/FORMATO-REGISTRO+DE+ASESORIA.pdf"],
-            segundaSeguimientoEv: ["https://sovmm-01.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdf"],
-            tercerAsesoria: ["https://sovmm-01.s3.us-east-2.amazonaws.com/FORMATO-REGISTRO+DE+ASESORIA.pdf"],
-            tercerSeguimientoEv: ["https://sovmm-01.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdf"],
-            anteProy: ["https://sovmm-01.s3.us-east-2.amazonaws.com/FORMATO-ANTEPROYECTO+DE+RESIDENCIAS+PROFESIONALES.pdf"],
+            primerAsesoria: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-REGISTRO+DE+ASESORIA.pdf"],
+            primerSeguimientoEv: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdf"],
+            segundaAsesoria: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-REGISTRO+DE+ASESORIA.pdf"],
+            segundaSeguimientoEv: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdf"],
+            tercerAsesoria: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-REGISTRO+DE+ASESORIA.pdf"],
+            tercerSeguimientoEv: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdff"],
+            anteProy: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-ANTEPROYECTO+DE+RESIDENCIAS+PROFESIONALES.pdf"],
             solicitudRes: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-SOLICITUD+DE+RESIDENCIAS+PROFESIONALES.pdf"],
-            cartPres: ["https://sovmm-01.s3.us-east-2.amazonaws.com/FORMATO-CARTA+DE+PRESENTACI%C3%93N.pdf"],
-            cartAceptacion: ["https://sovmm-01.s3.us-east-2.amazonaws.com/FORMATO-CARTA+DE+ACEPTACION.pdf"],
+            cartPres: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-CARTA+DE+PRESENTACIÓN.pdf"],
+            cartAceptacion: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-CARTA+DE+ACEPTACION.pdf"],
             status: false
           };
           Axios.post("proyectos/new", newProyecto, { headers: this.auth }).then(proyecto => {

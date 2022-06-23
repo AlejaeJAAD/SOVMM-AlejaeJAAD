@@ -220,15 +220,15 @@
                 <v-expansion-panel-content height="100%" style="position: relative;">
                   <v-row>
                     <v-col cols="12">
-                      <v-card color="dark" label outlined block flat class="text-center pa-1" style="margin-bottom: -15px;">
+                      <v-card color="dark" label block flat class="text-center pa-1" style="margin-bottom: -15px;">
                         SOLICITUD DE RESIDENCIAS PROFESIONALES
                       </v-card>
                     </v-col>
                     <v-col cols="12">
                       <v-card height="auto" style="z-index:20001;">
-                        <v-dialog :retain-focus="false" v-model="dialogSolicitudRes" fullscreen hide-overlay transition="dialog-bottom-transition">
+                        <v-dialog :retain-focus="false" v-model="dialogSolicitudRes" width="700px" hide-overlay transition="dialog-bottom-transition">
                           <template v-slot:activator="{ on, attrs }">
-                            <v-btn small outlined block color="blue accent-4" v-bind="attrs" v-on="on" width="100%">
+                            <v-btn small outlined block color="blue accent-4" v-bind="attrs" v-on="on" width="100%" style="margin-bottom: -15px">
                               SUBE AQUI SOLICITUD DE RESIDENCIAS
                             </v-btn>
                           </template>
@@ -250,15 +250,15 @@
                     </v-col>
 
                     <v-col cols="12">
-                      <v-card color="dark" label outlined block flat class="text-center pa-1" style="margin-bottom: -15px">
+                      <v-card color="dark" label block flat class="text-center pa-1" style="margin-bottom: -15px">
                         CARTA PRESENTACION Y CARTA ACEPTACION
                       </v-card>
                     </v-col>
                     <v-col cols="6">
-                      <v-card height="auto">
-                        <v-dialog :retain-focus="false" v-model="dialogPresentacion" fullscreen hide-overlay transition="dialog-bottom-transition">
+                      <v-card height="auto" style="z-index:20001;">
+                        <v-dialog :retain-focus="false" v-model="dialogPresentacion" width="700px" hide-overlay transition="dialog-bottom-transition">
                           <template v-slot:activator="{ on, attrs }">
-                            <v-btn outlined block color="blue accent-4" v-bind="attrs" v-on="on" large width="100%">
+                            <v-btn small outlined block color="blue accent-4" v-bind="attrs" v-on="on" width="100%" style="margin-bottom: -15px">
                               SUBE AQUI CARTA DE PRESENTACION
                             </v-btn>
                           </template>
@@ -266,7 +266,7 @@
                             <v-card-title class="text-h5 grey lighten-2 pa-10">
                               CARTA PRESENTACION
                             </v-card-title>
-                            <CartaPresentacion :proyecto="proyecto" />
+                            <CartaPresentacion :selectedProyecto="selectedProyecto" :selectedPresidencia="selectedPresidencia" />
                             <v-divider></v-divider>
                             <v-card-actions>
                               <v-spacer></v-spacer>
@@ -280,9 +280,9 @@
                     </v-col>
                     <v-col cols="6">
                       <v-card height="auto">
-                        <v-dialog :retain-focus="false" v-model="dialogAceptacion" fullscreen hide-overlay transition="dialog-bottom-transition">
+                        <v-dialog :retain-focus="false" v-model="dialogAceptacion" width="700px" hide-overlay transition="dialog-bottom-transition">
                           <template v-slot:activator="{ on, attrs }">
-                            <v-btn outlined block color="blue accent-4" v-bind="attrs" v-on="on" large width="100%">
+                            <v-btn small outlined block color="blue accent-4" v-bind="attrs" v-on="on" width="100%" style="margin-bottom: -15px">
                               SUBE AQUI CARTA DE ACEPTACION
                             </v-btn>
                           </template>
@@ -290,7 +290,7 @@
                             <v-card-title class="text-h5 grey lighten-2 pa-10">
                               CARTA ACEPTACION
                             </v-card-title>
-                            <CartaAceptacion :proyecto="proyecto" />
+                            <CartaAceptacion :selectedProyecto="selectedProyecto" :selectedPresidencia="selectedPresidencia" />
                             <v-divider></v-divider>
                             <v-card-actions>
                               <v-spacer></v-spacer>
@@ -304,15 +304,15 @@
                     </v-col>
 
                     <v-col cols="12">
-                      <v-card color="dark" label outlined block flat class="text-center pa-1" style="margin-bottom: -15px">
+                      <v-card color="dark" label block flat class="text-center pa-1" style="margin-bottom: -15px">
                         ANTEPROYECTO DE RESIDENCIAS PROFESIONALES
                       </v-card>
                     </v-col>
                     <v-col cols="12">
-                      <v-card height="auto">
-                        <v-dialog :retain-focus="false" v-model="dialogAntePro" fullscreen hide-overlay transition="dialog-bottom-transition">
+                      <v-card height="auto" style="z-index:20001;">
+                        <v-dialog :retain-focus="false" v-model="dialogAntePro" width="700px" hide-overlay transition="dialog-bottom-transition">
                           <template v-slot:activator="{ on, attrs }">
-                            <v-btn outlined block color="blue accent-4" v-bind="attrs" v-on="on" large width="100%">
+                            <v-btn small outlined block color="blue accent-4" v-bind="attrs" v-on="on" width="100%" style="margin-bottom: -15px">
                               SUBE AQUI ANTEPROYECTO DE RESIDENCIAS PROFESIONALES
                             </v-btn>
                           </template>
@@ -320,7 +320,7 @@
                             <v-card-title class="text-h5 grey lighten-2 pa-10">
                               ANTEPROYECTO DE RESIDENCIAS PROFESIONALES
                             </v-card-title>
-                            <Anteproyecto :proyecto="proyecto" />
+                            <Anteproyecto :selectedProyecto="selectedProyecto" :selectedPresidencia="selectedPresidencia" />
                             <v-divider></v-divider>
                             <v-card-actions>
                               <v-spacer></v-spacer>
@@ -334,15 +334,15 @@
                     </v-col>
 
                     <v-col cols="12">
-                      <v-card color="dark" label outlined block flat class="text-center pa-1" style="margin-bottom: -15px">
+                      <v-card color="dark" label block flat class="text-center pa-1" style="margin-bottom: -15px">
                         PRIMER SEGUIMIENTO
                       </v-card>
                     </v-col>
                     <v-col cols="6">
                       <v-card height="auto">
-                        <v-dialog :retain-focus="false" v-model="dialogPrimerAsesoria" fullscreen hide-overlay transition="dialog-bottom-transition">
+                        <v-dialog :retain-focus="false" v-model="dialogPrimerAsesoria" width="700px" hide-overlay transition="dialog-bottom-transition">
                           <template v-slot:activator="{ on, attrs }">
-                            <v-btn outlined block color="blue darken-2" v-bind="attrs" v-on="on" large width="100%">
+                            <v-btn small outlined block color="blue darken-2" v-bind="attrs" v-on="on" width="100%" style="margin-bottom: -15px">
                               SUBE AQUI FORMATO PARA EL REGISTRO DE ASESORIAS 1
                             </v-btn>
                           </template>
@@ -350,7 +350,7 @@
                             <v-card-title class="text-h5 grey lighten-2 pa-10">
                               PRIMER ASESORIA
                             </v-card-title>
-                            <PrimerAsesoria :proyecto="proyecto" />
+                            <PrimerAsesoria :selectedProyecto="selectedProyecto" :selectedPresidencia="selectedPresidencia" />
                             <v-divider></v-divider>
                             <v-card-actions>
                               <v-spacer></v-spacer>
@@ -364,9 +364,9 @@
                     </v-col>
                     <v-col cols="6">
                       <v-card height="auto">
-                        <v-dialog :retain-focus="false" v-model="dialogPrimerSeguimiento" fullscreen hide-overlay transition="dialog-bottom-transition">
+                        <v-dialog :retain-focus="false" v-model="dialogPrimerSeguimiento" width="700px" hide-overlay transition="dialog-bottom-transition">
                           <template v-slot:activator="{ on, attrs }">
-                            <v-btn :outlined="isOutlined" block color="blue darken-2" v-bind="attrs" v-on="on" large width="100%">
+                            <v-btn small :outlined="isOutlinedPrimerSeg" block color="blue darken-2" v-bind="attrs" v-on="on" width="100%" style="margin-bottom: -15px">
                               SUBE AQUI EVALUACION Y SEGUIMIENTO 1
                             </v-btn>
                           </template>
@@ -374,11 +374,11 @@
                             <v-card-title class="text-h5 grey lighten-2 pa-10">
                               EVALUACION Y SEGUIMIENTO 1
                             </v-card-title>
-                            <PrimerSeguimiento :proyecto="proyecto" />
+                            <PrimerSeguimiento :selectedProyecto="selectedProyecto" :selectedPresidencia="selectedPresidencia" />
                             <v-divider></v-divider>
                             <v-card-actions>
                               <v-spacer></v-spacer>
-                              <v-btn right color="primary" text @click="dialogPrimerSeguimiento = false">
+                              <v-btn outlined right color="primary" text @click="dialogPrimerSeguimiento = false">
                                 Cerrar
                               </v-btn>
                             </v-card-actions>
@@ -388,15 +388,15 @@
                     </v-col>
 
                     <v-col cols="12">
-                      <v-card color="dark" label outlined block flat class="text-center pa-1" style="margin-bottom: -15px">
+                      <v-card color="dark" label block flat class="text-center pa-1" style="margin-bottom: -15px">
                         SEGUNDO SEGUIMIENTO
                       </v-card>
                     </v-col>
                     <v-col cols="6">
                       <v-card height="auto">
-                        <v-dialog :retain-focus="false" v-model="dialogSegundaAsesoria" fullscreen hide-overlay transition="dialog-bottom-transition">
+                        <v-dialog :retain-focus="false" v-model="dialogSegundaAsesoria" width="700px" hide-overlay transition="dialog-bottom-transition">
                           <template v-slot:activator="{ on, attrs }">
-                            <v-btn outlined block color="blue darken-3" v-bind="attrs" v-on="on" large width="100%">
+                            <v-btn small outlined block color="blue darken-3" v-bind="attrs" v-on="on" width="100%" style="margin-bottom: -15px">
                               SUBE AQUI FORMATO PARA EL REGISTRO DE ASESORIAS 2
                             </v-btn>
                           </template>
@@ -404,7 +404,7 @@
                             <v-card-title class="text-h5 grey lighten-2 pa-10">
                               SEGUNDA ASESORIA
                             </v-card-title>
-                            <SegundaAsesoria :proyecto="proyecto" />
+                            <SegundaAsesoria :selectedProyecto="selectedProyecto" :selectedPresidencia="selectedPresidencia" />
                             <v-divider></v-divider>
                             <v-card-actions>
                               <v-spacer></v-spacer>
@@ -418,9 +418,9 @@
                     </v-col>
                     <v-col cols="6">
                       <v-card height="auto">
-                        <v-dialog :retain-focus="false" v-model="dialogSegundoSeguimiento" fullscreen hide-overlay transition="dialog-bottom-transition">
+                        <v-dialog :retain-focus="false" v-model="dialogSegundoSeguimiento" width="700px" hide-overlay transition="dialog-bottom-transition">
                           <template v-slot:activator="{ on, attrs }">
-                            <v-btn :outlined="isOutlined" block color="blue darken-3" v-bind="attrs" v-on="on" large width="100%">
+                            <v-btn small outlined block color="blue darken-3" v-bind="attrs" v-on="on" width="100%" style="margin-bottom: -15px">
                               SUBE AQUI EVALUACION Y SEGUIMIENTO 2
                             </v-btn>
                           </template>
@@ -428,7 +428,7 @@
                             <v-card-title class="text-h5 grey lighten-2 pa-10">
                               EVALUACION Y SEGUIMIENTO 2
                             </v-card-title>
-                            <SegundoSeguimiento :proyecto="proyecto" />
+                            <SegundoSeguimiento :selectedProyecto="selectedProyecto" :selectedPresidencia="selectedPresidencia" />
                             <v-divider></v-divider>
                             <v-card-actions>
                               <v-spacer></v-spacer>
@@ -442,15 +442,15 @@
                     </v-col>
 
                     <v-col cols="12">
-                      <v-card color="dark" label outlined block flat class="text-center pa-1" style="margin-bottom: -15px">
+                      <v-card color="dark" label block flat class="text-center pa-1" style="margin-bottom: -15px">
                         TERCER SEGUIMIENTO
                       </v-card>
                     </v-col>
                     <v-col cols="6">
                       <v-card height="auto">
-                        <v-dialog :retain-focus="false" v-model="dialogTerceraAsesoria" fullscreen hide-overlay transition="dialog-bottom-transition">
+                        <v-dialog :retain-focus="false" v-model="dialogTerceraAsesoria" width="700px" hide-overlay transition="dialog-bottom-transition">
                           <template v-slot:activator="{ on, attrs }">
-                            <v-btn outlined block color="blue darken-4" v-bind="attrs" v-on="on" large width="100%">
+                            <v-btn small outlined block color="blue darken-4" v-bind="attrs" v-on="on" width="100%" style="margin-bottom: -15px">
                               SUBE AQUI FORMATO PARA EL REGISTRO DE ASESORIAS 3
                             </v-btn>
                           </template>
@@ -458,7 +458,7 @@
                             <v-card-title class="text-h5 grey lighten-2 pa-10">
                               TERCER ASESORIA
                             </v-card-title>
-                            <TercerAsesoria :proyecto="proyecto" />
+                            <TercerAsesoria :selectedProyecto="selectedProyecto" :selectedPresidencia="selectedPresidencia" />
                             <v-divider></v-divider>
                             <v-card-actions>
                               <v-spacer></v-spacer>
@@ -472,9 +472,9 @@
                     </v-col>
                     <v-col cols="6">
                       <v-card height="auto">
-                        <v-dialog :retain-focus="false" v-model="dialogTercerSeguimiento" fullscreen hide-overlay transition="dialog-bottom-transition">
+                        <v-dialog :retain-focus="false" v-model="dialogTercerSeguimiento" width="700px" hide-overlay transition="dialog-bottom-transition">
                           <template v-slot:activator="{ on, attrs }">
-                            <v-btn :outlined="isOutlined" block color="blue darken-4" v-bind="attrs" v-on="on" large width="100%">
+                            <v-btn small outlined block color="blue darken-4" v-bind="attrs" v-on="on" width="100%">
                               SUBE AQUI EVALUACION Y SEGUIMIENTO 3
                             </v-btn>
                           </template>
@@ -482,7 +482,7 @@
                             <v-card-title class="text-h5 grey lighten-2 pa-10">
                               EVALUACION Y SEGUIMIENTO 3
                             </v-card-title>
-                            <TercerSeguimiento :proyecto="proyecto" />
+                            <TercerSeguimiento :selectedProyecto="selectedProyecto" :selectedPresidencia="selectedPresidencia" />
                             <v-divider></v-divider>
                             <v-card-actions>
                               <v-spacer></v-spacer>
@@ -525,9 +525,17 @@
     </v-card>
     <v-row style="margin: 0 -0.5rem 0 0">
       <v-col cols="12" align="right">
-        <v-btn color="black" outlined to="/proyectos-alumnos">
-          Volver a proyectos
-        </v-btn>
+        <v-card flat>
+          <v-card-actions>
+            <v-container>
+              <v-row dense>
+                <v-col
+                  ><v-btn color="black" outlined to="/proyectos-alumnos"><v-icon></v-icon>Volver a proyectos</v-btn></v-col
+                >
+              </v-row>
+            </v-container>
+          </v-card-actions>
+        </v-card>
         <!-- <router-link class="" :to="{ name: 'ProyectosAlumnos' }">
           Go back
         </router-link> -->
@@ -583,7 +591,17 @@ export default {
       dialogAntePro: false,
       dialogSolicitudRes: false,
       dialogPresentacion: false,
-      dialogAceptacion: false
+      dialogAceptacion: false,
+      primerAsesoria: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-REGISTRO+DE+ASESORIA.pdf"],
+      primerSeguimientoEv: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdf"],
+      segundaAsesoria: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-REGISTRO+DE+ASESORIA.pdf"],
+      segundaSeguimientoEv: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdf"],
+      tercerAsesoria: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-REGISTRO+DE+ASESORIA.pdf"],
+      tercerSeguimientoEv: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdff"],
+      anteProy: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-ANTEPROYECTO+DE+RESIDENCIAS+PROFESIONALES.pdf"],
+      solicitudRes: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-SOLICITUD+DE+RESIDENCIAS+PROFESIONALES.pdf"],
+      cartPres: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-CARTA+DE+PRESENTACIÓN.pdf"],
+      cartAceptacion: ["https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-CARTA+DE+ACEPTACION.pdf"]
     };
   },
   mounted() {
@@ -617,14 +635,12 @@ export default {
     selectedUsuario() {
       return this.$store.getters.getSelectedUsuario || [];
     },
-    isOutlined() {
-      if (this.selectedProyecto.primerSeguimientoEv[0] !== "https://sovmm-01.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdf") {
-        return false;
-      } else if (this.selectedProyecto.primerSeguimientoEv[0] !== "https://sovmm-01.s3.us-east-2.amazonaws.com/FORMATO-EVALUACION+Y+SEGUIMIENTO+DE+RESIDENCIA+PROFESIONAL.pdf") {
-        return false;
-      } else {
+    isOutlinedPrimerSeg() {
+      console.log(this.selectedProyecto.primerSeguimientoEv[0], this.primerSeguimientoEv[0]);
+      if (this.selectedProyecto.primerSeguimientoEv[0] !== this.primerSeguimientoEv) {
         return true;
       }
+      return false;
     }
   },
   watch: {

@@ -29,16 +29,16 @@
                   <h5>
                     Nombre de proyecto: <br /><span style="opacity: 0.8">{{ presidencia.nProyecto }}</span>
                   </h5>
-                  <h5>
+                  <!-- <h5>
                     Creador por: <br /><span style="opacity: 0.8">{{ getUserInfoC.firstName }} {{ getUserInfoC.lastName }}</span>
                   </h5>
                   <h5>
                     Correo institucional: <br /><span style="opacity: 0.8">{{ getUserInfoC.email }}</span>
-                  </h5>
+                  </h5> -->
                 </div>
               </v-card>
             </template>
-            <v-card>
+            <!-- <v-card>
               <v-list>
                 <v-list-item>
                   <v-list-item-avatar>
@@ -66,7 +66,7 @@
                   Cerrar
                 </v-btn>
               </v-card-actions>
-            </v-card>
+            </v-card> -->
           </v-menu>
         </v-card>
       </v-col>

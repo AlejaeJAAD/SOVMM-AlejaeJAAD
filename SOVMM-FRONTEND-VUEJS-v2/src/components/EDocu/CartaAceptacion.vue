@@ -3,13 +3,13 @@
     <v-form>
       <v-row>
         <v-col cols="12">
-          <a @click="styleButton" style="color: inherit; text-decoration: none;" href="https://sovmm-03.s3.us-east-2.amazonaws.com/FORMATO-CARTA+DE+PRESENTACI%C3%93N.pdf" target="_blank">
+          <a @click="styleButton" style="color: inherit; text-decoration: none;" href="https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-CARTA+DE+ACEPTACION.pdf" target="_blank">
             <v-btn large dark @click="styleButton" :outlined="!clicked" :color="!clicked ? 'grey darken-3' : 'black'" :class="!clicked ? 'white--text' : ''">
               Descarga el formato de la carta de presentacion
               <v-icon class="ml-2">mdi-download</v-icon>
             </v-btn>
           </a>
-          <form action="https://sovmm-03.s3.us-east-2.amazonaws.com/FORMATO-CARTA+DE+PRESENTACI%C3%93N.pdf" method="get"></form>
+          <form action="https://sovmm-bucket-01.s3.us-east-2.amazonaws.com/FORMATO-CARTA+DE+ACEPTACION.pdf" method="get"></form>
         </v-col>
         <v-col cols="12">
           <v-card-subtitle>
@@ -29,29 +29,32 @@
         CARGAR CARTA DE ACEPTACION CORRESPONDIENTE PARA SU ACTUALIZACION
       </v-card>
       <v-row>
-        <v-col cols="12">
-          <v-card flat v-for="document in this.info.cartAceptacion" :key="document">
-            <pdf
-              :src="document"
-              :page="currentPage"
-              @num-pages="pageCount = $event"
-              @page-loaded="currentPage = $event"
-              style="display: inline-block; width: 100%;
-                 position:relative;"
-            >
-            </pdf>
+        <v-col cols="12" class="d-flex align-center justify-center">
+          <v-card
+            v-for="document in selectedProyecto.cartAceptacion"
+            :key="document"
+            style="width: 100%; margin: 1rem; margin-bottom: -1rem
+                "
+          >
+            <pdf :src="document" :page="currentPage" @num-pages="pageCount = $event" @page-loaded="currentPage = $event"> </pdf>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="d-flex align-center justify-center">
+          <v-card flat style="margin-bottom: -3.2rem;">
             <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn class="primary" @click="prevPage">
-                Pagina anterior
-              </v-btn>
-              <v-spacer></v-spacer>
-              <v-btn class="ma-10">{{ currentPage }} / {{ pageCount }}</v-btn>
-              <v-spacer></v-spacer>
-              <v-btn class="primary" @click="nextPage">
-                Pagina siguiente
-              </v-btn>
-              <v-spacer></v-spacer>
+              <v-container>
+                <v-row dense>
+                  <v-col
+                    ><v-btn outlined @click="prevPage"><v-icon>mdi-arrow-left-drop-circle-outline</v-icon></v-btn></v-col
+                  >
+                  <v-col
+                    ><v-btn outlined>{{ currentPage }} / {{ pageCount }}</v-btn></v-col
+                  >
+                  <v-col
+                    ><v-btn outlined @click="nextPage"><v-icon>mdi-arrow-right-drop-circle-outline</v-icon></v-btn></v-col
+                  >
+                </v-row>
+              </v-container>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -66,11 +69,7 @@ import pdf from "vue-pdf";
 import Axios from "axios";
 
 export default {
-  props: {
-    proyecto: Object,
-    index: Number,
-    mios: Boolean
-  },
+  props: ["selectedProyecto", "selectedPresidencia"],
   name: "CartaAceptacion",
   components: {
     DocumentHandler,
@@ -99,25 +98,6 @@ export default {
       expand: false,
       cartAceptacion: []
     };
-  },
-  mounted() {
-    Axios.get(`proyectos/${this.proyecto.proyectoId}`, {
-      headers: this.$store.getters.getAuth
-    }).then(response => {
-      this.info = response.data;
-      console.log(response, "8749");
-      console.log(this.info, "3939393");
-      // eslint-disable-next-line prefer-destructuring
-    });
-    this.$nextTick(() => {
-      setTimeout(() => {
-        if (this.$route.fullPath.includes(`#${this.proyecto.id}`)) {
-          this.expand = true;
-          this.$refs[this.report.id].scrollIntoView();
-        }
-      }, 1000);
-    });
-    console.log(this.proyecto, "uyuyuyuy");
   },
   watch: {
     isActive() {
@@ -151,8 +131,6 @@ export default {
       this.currentPage++;
     },
     postDocument() {
-      console.log(this.cartAceptacion, "ih");
-      console.log(this.proy.cartAceptacion, "49494");
       /*
       const data = {
         document: '',
@@ -174,44 +152,42 @@ export default {
             // eslint-disable-next-line prefer-destructuring
             data.document = res.data.docs[0];
 
-            console.log('put', data);
+            console.log(data);
           });
       } else {
-        console.log('puto', data);
+        console.log(data);
       }
       */
       if (this.cartAceptacion.length !== 0) {
-        console.log("entro0");
-        console.log(this.info, "metodo");
         const presidenciasActualizado = {
-          id: this.proyecto.id,
-          createdBy: this.proyecto.createdBy,
-          nProyecto: this.proyecto.nProyecto,
-          opcElegida: this.proyecto.opcElegida,
-          periodo: this.proyecto.periodo,
-          objetivo: this.proyecto.objetivo,
-          justificacion: this.proyecto.justificacion,
-          giroEmpresa: this.proyecto.giroEmpresa,
-          RFC: this.proyecto.rfc,
-          domicilio: this.proyecto.domicilio,
-          Colonia: this.proyecto.colonia,
-          Categoria: this.proyecto.categoria,
-          Departamento: this.proyecto.departamento,
-          CP: this.proyecto.cp,
-          Fax: this.proyecto.fax,
-          Ciudad: this.proyecto.ciudad,
-          Estado: this.proyecto.estado,
-          Telefono: this.proyecto.telefono,
-          Ext: this.proyecto.ext,
-          NTEmpresa: this.proyecto.ntEmpresa,
-          puestoNTE: this.proyecto.puestoNTE,
-          NFA: this.proyecto.nfa,
-          puestoNFA: this.proyecto.puestoNFA,
-          AsesorExterno: this.proyecto.asesorExterno,
-          puestoAE: this.proyecto.puestoAE,
-          proyectoId: this.proyecto.proyectoId,
+          id: this.selectedPresidencia.id,
+          createdBy: this.selectedPresidencia.createdBy,
+          nProyecto: this.selectedPresidencia.nProyecto,
+          opcElegida: this.selectedPresidencia.opcElegida,
+          periodo: this.selectedPresidencia.periodo,
+          objetivo: this.selectedPresidencia.objetivo,
+          justificacion: this.selectedPresidencia.justificacion,
+          giroEmpresa: this.selectedPresidencia.giroEmpresa,
+          RFC: this.selectedPresidencia.rfc,
+          domicilio: this.selectedPresidencia.domicilio,
+          Colonia: this.selectedPresidencia.colonia,
+          Categoria: this.selectedPresidencia.categoria,
+          Departamento: this.selectedPresidencia.departamento,
+          CP: this.selectedPresidencia.cp,
+          Fax: this.selectedPresidencia.fax,
+          Ciudad: this.selectedPresidencia.ciudad,
+          Estado: this.selectedPresidencia.estado,
+          Telefono: this.selectedPresidencia.telefono,
+          Ext: this.selectedPresidencia.ext,
+          NTEmpresa: this.selectedPresidencia.ntEmpresa,
+          puestoNTE: this.selectedPresidencia.puestoNTE,
+          NFA: this.selectedPresidencia.nfa,
+          puestoNFA: this.selectedPresidencia.puestoNFA,
+          AsesorExterno: this.selectedPresidencia.asesorExterno,
+          puestoAE: this.selectedPresidencia.puestoAE,
+          proyectoId: this.selectedPresidencia.proyectoId,
           status: 2,
-          createdDate: this.proyecto.createdDate,
+          createdDate: this.selectedPresidencia.createdDate,
           resolutionDate: new Date().toISOString()
         };
 
@@ -224,8 +200,6 @@ export default {
           headers: this.$store.getters.getAuth
         }).then(res => {
           const proyect = this.info;
-          console.log(res.data.docs, "tutut");
-          console.log(proyect, "utyt");
           proyect.cartAceptacion = res.data.docs;
           proyect.status = true;
           Axios.put(`proyectos/${proyect.id}`, proyect, {
@@ -234,9 +208,7 @@ export default {
           Axios.put(`presidencias/${presidenciasActualizado.id}`, presidenciasActualizado, {
             headers: this.$store.getters.getAuth
           }).then(() => {
-            this.$store.dispatch("fetchMyPresidencias");
-            this.$store.dispatch("fetchPresidencias");
-            console.log(proyect, "oororor");
+            console.log(proyect, "Proyecto");
           });
         });
       }
