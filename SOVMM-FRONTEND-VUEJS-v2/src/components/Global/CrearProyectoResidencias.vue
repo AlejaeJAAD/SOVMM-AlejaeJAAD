@@ -211,9 +211,9 @@ export default {
     }
   },
   mounted() {
-    // this.fecha = new Date();
-    // this.año = this.fecha.getFullYear();
-    // console.log('El año actual es: ', this.año);
+    this.fecha = new Date();
+    this.año = this.fecha.getFullYear();
+    console.log("El año actual es: ", this.año);
     this.categorias = this.metalmecanica;
   }
 };

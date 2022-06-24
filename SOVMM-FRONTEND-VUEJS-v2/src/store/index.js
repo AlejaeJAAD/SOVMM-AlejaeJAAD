@@ -6,6 +6,7 @@ import AuthManager from "@/store/modules/AuthManager";
 import ResidenciasManager from "@/store/modules/ResidenciasManager";
 import Estudiantes from "@/store/modules/Estudiantes";
 import Maestros from "@/store/modules/Maestros";
+import UserManager from "@/store/modules/UserManager";
 
 Vue.use(Vuex);
 
@@ -17,6 +18,7 @@ export default new Vuex.Store({
     AuthManager,
     ResidenciasManager,
     Estudiantes,
-    Maestros
+    Maestros,
+    UserManager
   }
 });

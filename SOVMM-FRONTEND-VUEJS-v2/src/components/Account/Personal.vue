@@ -62,7 +62,7 @@
         </v-col>
 
         <v-col cols="12" md="4">
-          <v-select solo :readonly="sinCP" :items="suburbs" :value="suburb" label="Suburb" v-model="suburb" append-icon="mdi-home-group"></v-select>
+          <v-select solo :readonly="sinCP" :items="suburbs" :value="suburb" label="Suburb" v-model="suburb" item-text="asentamiento" item-value="cp" append-icon="mdi-home-group"></v-select>
         </v-col>
         <v-col cols="12" md="12">
           <v-text-field label="Direccion" solo :readonly="sinCP" v-model="dir" append-icon="mdi-map-marker"> </v-text-field>

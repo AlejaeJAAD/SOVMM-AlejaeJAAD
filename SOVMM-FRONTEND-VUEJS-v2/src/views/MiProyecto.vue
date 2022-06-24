@@ -11,8 +11,16 @@
           <CrearProyectoResidencias v-if="nr" @onClose="nr = false" @createdP="createdP" />
         </v-dialog>
       </v-col>
+      <v-col cols="12" v-if="proyectosCargados">
+        <v-card style="margin: 1rem">
+          Cargando proyecto...
+        </v-card>
+      </v-col>
+      <v-col cols="12" lg="12" md="12" sm="12" xs="12" v-for="presidencia in getPresidencias" :key="presidencia.id" v-else>
+        <ListPRCard :presidencia="presidencia" />
+      </v-col>
     </v-row>
-    <v-card shaped elevation="3" class="colores" style="position: absolute;" color="transparent">
+    <v-card shaped elevation="3" class="colores" style="position: absolute;" color="white">
       <div class="elementos filter">
         Rechazado: <v-avatar size="25" color="red darken-2"></v-avatar>
         <br />
@@ -31,18 +39,24 @@
 
 <script>
 import CrearProyectoResidencias from "@/components/Global/CrearProyectoResidencias";
+import ListPRCard from "@/components/MiProyectoAlumno/ListPRCard";
 export default {
   components: {
-    CrearProyectoResidencias
+    CrearProyectoResidencias,
+    ListPRCard
   },
   data() {
     return {
-      nr: false
+      nr: false,
+      proyectosCargados: true
     };
   },
   mounted() {
     this.$nextTick(() => {
       this.$store.dispatch("fetchMiPresidencias");
+      setTimeout(() => {
+        this.proyectosCargados = false;
+      }, 2000);
     });
   },
   computed: {
@@ -61,6 +75,9 @@ export default {
         case "xl":
           return "80%";
       }
+    },
+    getPresidencias() {
+      return this.$store.getters.getMiProyectoResidencias;
     }
   },
   methods: {

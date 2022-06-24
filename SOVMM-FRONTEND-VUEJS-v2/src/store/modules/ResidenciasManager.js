@@ -5,6 +5,7 @@ const state = {
   proyectosResidenciasInmutable: [],
   proyectos: [],
   miProyectoResidencias: [],
+  miProyecto: [],
   longMiProyectoResidencias: [],
   longProyectosResidencias: [],
   selectedPresidencia: [],
@@ -38,6 +39,9 @@ const getters = {
   getProyectos(state) {
     return state.proyectos;
   },
+  getMiProyecto(state) {
+    return state.miProyecto;
+  },
   getFilter(state) {
     return state.filter;
   },
@@ -70,6 +74,9 @@ const mutations = {
   },
   setProyectos(state, proyectos) {
     state.proyectos = proyectos;
+  },
+  setMiProyectos(state, proyecto) {
+    state.miProyecto = proyecto;
   },
   setFilter(state, filters) {
     state.filter = filters;
@@ -242,6 +249,17 @@ const actions = {
       }
     }).then(res => {
       context.commit("setProyectos", res.data);
+    });
+  },
+  fetchMiProyectos(context, id) {
+    console.log(id);
+    Axios.get(`proyectos/presidencias/${id}`, {
+      headers: {
+        Authorization: `Bearer ${context.getters.getToken}`
+      }
+    }).then(res => {
+      context.commit("setMiProyectos", res.data);
+      // console.log(res.data, 'hola');
     });
   },
   SET_ERROR: (context, errorMsg) => {
